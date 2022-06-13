@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(68.15deg, #f0e4a4 16.62%, #ffde3a 85.61%);
+    height: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 1px white;
+    background-color: #ffd000;
+}
+
+.cabecalho-imagem {
+    width: 200px;
+    padding: 20px;
+}
+
+.sessao-primaria {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.ebook {
+    text-align: center;
+    flex-direction: column;
+}
+
+.ebook-imagem {
+    height: 400px;
+}
+
+.ebook * {
+    padding: 9px;
+}
+
+
+
+.formulario {
+    background-color: #ffd000;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formulario-cabecalho {
+    padding-bottom: 15px;
+    text-align: start;
+}
+
+.formulario-itens {
+    flex-direction: column;
+    text-align: start;
+}
+
+.formulario-itens *{
+
+    margin: 5px 0;
+}
+
+.formulario-input {
+    background-color: #f2e5a5;
+    color: black;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    text-indent: 10px;
+}
+
+.formulario-botao {
+    margin-top: 30px;
+    background-color: #ffe96a;
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    font-weight: 600;
+    transition: 0.2s all;
+}
+
+.formulario-botao:hover {
+    background-color: rgba(255, 239, 162, 0.466);
+    cursor: pointer;
+}
+
+.formulario-botao:active {
+    transform: scale(0.95);
+}
+
+.sessao-secundaria {
+    padding-top: 30px;
+    background-color: #ffd23e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.areas {
+
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.areas div {
+    background-color: #ecf842;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.areas img {
+    height: 100px;
+}
+
+
+
+
+
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px white;
+    background-color: #ffd000;
+    height: 80px;
+}
+
+.rodape img {
+    margin: 0 20px;
+    width: 30px;
+}
