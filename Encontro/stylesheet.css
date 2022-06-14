@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 250px 20%;
+    background-color: #015313;
+    color: azure;
+}
+
+.intro h1 {
+    font-size: 70px;
+
+    margin-bottom: 80px;
+}
+
+.intro p {
+    font-size:30px;
+    margin-bottom: 30px;
+}
+
+.intro-botao {
+    background-color: #F09E07;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.2s all;
+}
+
+.intro-botao:hover {
+    cursor: pointer;
+}
+
+.intro-botao:active {
+    transform: scale(0.95);
+}
+
+.palestrantes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.palestrantes h2 {
+    font-size: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.card {
+    background-color: #015313;
+    border-radius: 10px;
+    margin: 40px 0;
+    width: 420px;
+}
+
+.card h3 {
+    padding-top: 2%;
+    color: azure;
+    font-size: x-large;
+}
+
+.card p {
+    padding: 40px 10%;
+    color: azure;
+}
+
+.card img {
+    padding-top: 40px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.registro {
+    background-color: #015313;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5%;
+    color: azure;
+}
+
+.registro h3 {
+    font-size: 70px;
+}
+
+.registro p {
+    font-size: 20px;
+}
+
+.formulario {
+    background-color: rgb(7, 38, 21);
+    padding: 20px 2%;
+    border-radius: 10px;
+}
+
+.formulario  input, select {
+    margin-bottom: 30px;
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.formulario-botao {
+    background-color: #F09E07;
+    border: none;
+    transition: 0.2s all;
+}
+
+.formulario-botao:hover {
+    cursor: pointer;
+}
+
+.formulario-botao:active {
+    transform: scale(0.95);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    color: azure;
+    background-color: rgb(7, 38, 21);
+    padding: 1em;
+}
+
+@media (max-width: 500px) {
+    .intro {
+        padding: 150px 10%;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .intro p {
+        font-size:20px;
+    }
+
+    .palestrantes h2 {
+        font-size: 30px;
+    }
+
+    .registro div p{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .registro h3 {
+        font-size: 50px;
+    }
+
+    .formulario {
+        background-color: rgb(7, 38, 21);
+        padding: 20px 5%;
+        border-radius: 10px;
+    }
+
+    .formulario  input, select {
+        margin-bottom: 30px;
+        width: 300px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .rodape {
+        font-size: 10px;
+    }
+}
