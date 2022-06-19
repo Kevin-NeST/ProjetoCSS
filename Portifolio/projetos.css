@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+}
+
+body {
+   background-color: #252526;
+   color: azure;
+   font-family: 'Kanit', sans-serif;
+}
+
+.cabecalho {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   background-color: whitesmoke;
+   height: 66px;
+   color: #000;
+   border-bottom: solid 3px black;
+}
+
+.titulo {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 10px;
+   text-decoration: none;
+   color: #000;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+}
+
+.itajubus {
+   margin: 5% 3%;
+   background-color: #1E1E1E;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-radius: 10px;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   padding: 50px;
+}
+
+.slide-info {
+   padding: 35px 50px;
+   text-align: center;
+   width: 400px;
+}
+
+.slider {
+   overflow: hidden;
+   height: 100%;
+   width: 99%;
+   padding: 2px;
+   border: solid 1px azure;
+   border-radius: 10px;
+
+}
+
+.slider>.slider-content {
+   display: flex;
+   flex-wrap: nowrap;
+   transition: all 500ms ease;
+
+}
+
+.slider>.slider-content>.slider-item {
+   flex: 0 0 auto;
+   width: 100%;
+}
+
+.slider>input:nth-child(1):checked~.slider-content {
+   transform: translateX(0%);
+}
+
+.slider>input:nth-child(2):checked~.slider-content {
+   transform: translateX(-100%);
+}
+
+.slider>input:nth-child(3):checked~.slider-content {
+   transform: translateX(-200%);
+}
+
+.slider>input:nth-child(4):checked~.slider-content {
+   transform: translateX(-300%);
+}
+
+.itajubus-img {
+   width: 90%;
+}
+
+.itajubus h2 {
+   font-size: 50px;
+}
+
+.itajubus p {
+   font-size: 25px;
+}
+
+.projeto-nest {
+   margin: 5% 3%;
+   background-color: #1E1E1E;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-radius: 10px;
+}
+
+.projeto-nest h2 {
+   font-size: 50px;
+}
+
+.projeto-nest p {
+   font-size: 25px;
+}
+
+.slide-projeto-nest {
+   padding: 35px 50px;
+   text-align: center;
+   width: 700px;
+}
+
+.nest-img {
+   width: 90%;
+}
+
+.slider-nest {
+   overflow: hidden;
+   width: 100%;
+   padding: 2px;
+   border: solid 1px azure;
+   border-radius: 10px;
+   justify-content: space-around;
+
+}
+
+.slider-nest>.slider-content-nest {
+   display: flex;
+   flex-wrap: nowrap;
+   width: 100%;
+   transition: all 500ms ease;
+
+}
+
+.slider-nest>.slider-content-nest>.slider-item-nest {
+   flex: 0 0 auto;
+   width: 100%;
+}
+
+.slider-nest>input:nth-child(1):checked~.slider-content-nest {
+   transform: translateX(0%);
+}
+
+.slider-nest>input:nth-child(2):checked~.slider-content-nest {
+   transform: translateX(-100%);
+}
+
+.slider-nest>input:nth-child(3):checked~.slider-content-nest {
+   transform: translateX(-200%);
+}
+
+
+footer {
+   height: 140px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #1E1E1E;
+   justify-content: space-around;
+   border-top: solid 2px black;
+}
+
+footer img {
+   width: 30px;
+}
+
+@media (max-width:500px){
+   .info {
+      width: 70%;
+      padding: 50px;
+   }
+
+   .projetos {
+      visibility: hidden;
+   }
+
+   .itajubus h2 {
+      font-size: 30px;
+   }
+   
+   .itajubus p {
+      font-size: 15px;
+   }
+
+   .slide-projeto-nest {
+      padding: 35px 20px;
+   }
+
+   .projeto-nest h2 {
+      font-size: 30px;
+   }
+   
+   .projeto-nest p {
+      font-size: 15px;
+   }
+
+   footer {
+      height: 100px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1E1E1E;
+      justify-content: space-around;
+      border-top: solid 2px black;
+   }
+   
+   footer img {
+      width: 20px;
+   }
+
+}
